@@ -7,13 +7,14 @@ inventory = [
 {price: 70.00, name: "Juice", quantity_by_size: {l033: 7, l05: 2}}
 ]
 
-
 f_shop = ShopInventory.new(inventory)
 
-# puts f_shop.out_of_stock
+puts f_shop.item_in_stock
 
-# puts f_shop.item_in_stock
+puts f_shop.affordable
 
-# puts f_shop.how_much_left("Water")
+puts f_shop.out_of_stock
+
+puts f_shop.how_much_left("Cola")
 
 puts f_shop.total_stock
