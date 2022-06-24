@@ -1,6 +1,6 @@
-# task1 description
+# Description of task1 
 
-file class.rb contains class ShopInventory and its methods.
+File class.rb contains class ShopInventory and its methods.
 Shopinventory takes one argument - inventory, which consists of array, that include hashes for every item that is sold in shop.
 Every item hash has such characteristics as price, name and quantity by size.
 There is an example if iventory array in file main.rb
@@ -15,10 +15,10 @@ to use class methods you need to create a new class object by typing "ShopInvent
 
 # Examples
 
-puts f_shop.item_in_stock
-puts f_shop.affordable
-puts f_shop.out_of_stock
-puts f_shop.how_much_left("Cola")
-puts f_shop.total_stock
+<p>puts f_shop.item_in_stock</p>
+<p>puts f_shop.affordable</p>
+<p>puts f_shop.out_of_stock</p>
+<p>puts f_shop.how_much_left("Cola")</p>
+<p>puts f_shop.total_stock</p>
 
 
