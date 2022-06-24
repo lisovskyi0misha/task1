@@ -20,4 +20,27 @@ class ShopInventory
     result
   end
 
+  def out_of_stock
+    result = []
+    @inv.each do |in_hash|
+      result.append(in_hash) if in_hash[:quantity_by_size].empty?
+    end
+    result
+  end
+
+  def how_much_left(drink)
+    @inv.each do |in_hash|
+      return in_hash[:quantity_by_size] if in_hash.has_value?(drink)
+    end
+  end
+
+  def total_stock
+    sum = 0
+    @inv.each do |in_hash|
+      in_hash[:quantity_by_size].each { |key, val| sum += val}
+    end
+    sum
+  end
+
+
 end
